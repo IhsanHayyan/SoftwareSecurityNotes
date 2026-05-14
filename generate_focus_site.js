@@ -1,8 +1,8 @@
 const fs = require("fs");
 const path = require("path");
 
-const sourcePath =
-  "C:/Users/ihsan/OneDrive - Universiti Tenaga Nasional/trimester 2 2526/SOFTSEC CCSB5113/SLIDE/focus_subtopic.md";
+const sourcePath = path.join(process.cwd(), "focus_subtopic.md");
+
 const outPath = path.join(process.cwd(), "index.html");
 
 const markdown = fs.readFileSync(sourcePath, "utf8");
